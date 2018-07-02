@@ -1,0 +1,647 @@
+/*
+ Theme Name:   Cut Price Rentals
+ Theme URI:    https://www.understrap.com
+ Description:  UnderStrap Child Theme
+ Author:       Design Garage
+ Author URI:   https://www.designgarage.co.nz
+ Template:     understrap
+ Version:      0.3.5
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  understrap-child
+ Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
+ GitHub Theme URI: holger1411/understrap-child.
+*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+h1 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+h2 {
+    color: #1378bb;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+p {
+    margin-bottom: 20px;
+}
+a {
+    color: #1378bb;
+}
+a:hover, a:active, a:visited, a:focus {
+    text-decoration: none;
+}
+#top-bar {
+    background-color: #000000;
+    color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+#top-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#top-bar ul li {
+    display: inline-block;
+    position: relative;
+}
+#top-bar ul.contact-dets li {
+    font-weight: 700;
+    line-height: 24px;
+}
+#top-bar ul.contact-dets li:first-child {
+    margin-right: 20px;
+}
+#top-bar ul.contact-dets li:first-child:after {
+    content: "|";
+    position: absolute;
+    right: -15px;
+    top: -2px;
+}
+#top-bar ul li a {
+    color: #ffffff;
+}
+#top-bar ul.social-media {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#top-bar ul.social-media li {
+    text-align: center;
+}
+#top-bar ul.social-media li a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+#top-bar ul.social-media li a span {
+    color: #000000;
+    line-height: 25px;
+    display: block;
+}
+#header {
+    background-color: #1378bb;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 35px;
+}
+.home #header {
+    margin-bottom: 1px;
+}
+#header .navbar-brand {
+    padding: 0;
+    margin: 0;
+    width: 300px;
+}
+#header .logo-wrapper {
+    padding-left: 15px;
+    position: relative;
+    z-index: 99;
+    display: inline-block;
+}
+.no-padding {
+    padding: 0 !important;
+}
+.menu-wrapper {
+    position: absolute;
+    right: 0;
+    top: -7px;
+    width: 100%;
+    z-index: 98;
+}
+#mega-menu-wrap-primary #mega-menu-primary {
+    text-align: right;
+}
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-toggle-on > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:focus {
+    color: #ffffff;
+    font-weight: 700;
+}
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link {
+    color: #ffffff;
+    font-weight: 700;
+}
+.blue-section {
+    background-color: #1378bb;
+    margin-top: 1px;
+}
+.home .wpb_content_element {
+    margin-bottom: 0;
+}
+.panel-wrapper .panel-name {
+    background-color: #1378bb;
+    height: 70px;
+}
+.panel-wrapper .panel-name a {
+    display: block;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 10px;
+    line-height: 70px;
+    font-size: 30px;
+    position: relative;
+}
+.panel-wrapper .panel-name a:after {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    content: "";
+    height: 60px;
+    width: 60px;
+    background-size: 60px 60px;
+}
+.panel-wrapper .panel-name a.car:after {
+    background-image: url("images/car-icon.png");
+}
+.panel-wrapper .panel-name a.van:after {
+    background-image: url("images/van-icon.png");
+}
+.panel-wrapper .panel-name a.truck:after {
+    background-image: url("images/truck-icon.png");
+}
+.map-wrapper iframe {
+    width: 100%;
+}
+.quick-booking-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.quick-booking-wrapper .form-group {
+    width: 200px;
+    position: relative;
+}
+.quick-booking-wrapper .form-group span {
+    position: absolute;
+    color: #333333;
+    right: 5px;
+    top: 10px;
+    pointer-events: none;
+}
+.quick-booking-wrapper .form-control {
+    font-size: 14px;
+    color: #000000;
+}
+.quick-booking-wrapper .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-right: 20px;
+}
+.quick-booking-wrapper .form-group.last {
+    margin-right: 0;
+}
+.quick-booking-wrapper .form-group input[type=submit] {
+    background: #ffffff;
+    color: #1378bb;
+    border: 0;
+    height: 35px;
+    padding: 0 20px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+.quick-booking-wrapper .form-control::placeholder {
+    color: #000000;
+}
+select.form-control:not([size]):not([multiple]) {
+    height: auto;
+}
+.contacts-wrapper {
+    background-color: #1378bb;
+    height: 100%;
+    padding: 30px;
+}
+.contacts-wrapper ul {
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+}
+.contacts-wrapper ul li {
+    color: #ffffff;
+    line-height: 24px;
+    position: relative;
+    padding-left: 20px;
+}
+.contacts-wrapper ul li:before {
+    font-family: FontAwesome;
+    position: absolute;
+    left:0;
+}
+.contacts-wrapper ul li.mobile:before {
+    content: "\f10b";
+}
+.contacts-wrapper ul li.phone:before {
+    content: "\f095";
+}
+.contacts-wrapper ul li.email:before {
+    content: "\f0e0";
+    font-size: 12px;
+}
+.contacts-wrapper ul li.location:before {
+    content: "\f041";
+}
+.contacts-wrapper ul li a {
+    color: #ffffff;
+}
+.contacts-wrapper .btn-primary {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #1378bb;
+}
+.contacts-wrapper .btn {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.btn {
+    border-radius: 0;
+}
+.btn-primary {
+    background-image: none;
+}
+.cta-wrapper {
+    position: absolute;
+    right: 0;
+    width: 1140px;
+    left: 0;
+    margin: auto;
+    text-align: right;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    top: 50%;
+}
+.cta-wrapper .cta {
+    background-color: #1378bb;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    font-weight: 700;
+    display: inline-block;
+}
+.cta-wrapper .cta .cta-inner-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    top: 50%;
+}
+.cta-wrapper .cta .line1 {
+    font-size: 50px;
+    line-height: 55px;
+}
+.cta-wrapper .cta .line2 {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 10px;
+}
+.cta-wrapper .cta .line3 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.cta-wrapper .cta .btn-primary {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #1378bb;
+}
+.cta-wrapper .cta .btn {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+ul.contact-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul.contact-details li {
+    position: relative;
+    padding-left: 25px;
+}
+ul.contact-details li:before {
+    font-family: FontAwesome;
+    position: absolute;
+    left:0;
+    color: #1378bb;
+    top: 3px;
+}
+ul.contact-details li.mobile:before {
+    content: "\f10b";
+}
+ul.contact-details li.phone:before {
+    content: "\f095";
+}
+ul.contact-details li.email:before {
+    content: "\f0e0";
+    font-size: 12px;
+}
+ul.contact-details li a {
+    color: #000000;
+    line-height: 26px;
+}
+.form-group {
+    margin-top: 20px;
+}
+.form-group .form-control::placeholder {
+    font-size: 14px;
+}
+.form-group .form-control {
+    border-radius: 0;
+}
+.spacer-35 {
+    height: 35px !important;
+}
+.spacer-80 {
+    height: 80px !important;
+}
+#footer {
+    margin-top: 80px;
+}
+#copyright {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+#copyright a {
+    color: #000000;
+}
+#hq-rental-iframe{
+    width: 1px;
+    min-width: 100%;
+    border: none;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .cta-wrapper {
+        width: 100%;
+    }
+    .cta-wrapper .cta .line1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .cta-wrapper .cta .line2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .cta-wrapper .cta .line3 {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+    .cta-wrapper .cta {
+        height: 300px;
+        width: 300px;
+        margin-right: 15px;
+    }
+    .quick-booking-wrapper .form-group {
+        width: 150px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .container {
+        width: 100%;
+    }
+    .cta-wrapper {
+        width: 100%;
+    }
+    .cta-wrapper .cta {
+        margin-right: 15px;
+    }
+    #top-bar ul.social-media {
+        right: 15px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .cta-wrapper .cta .line1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .cta-wrapper .cta .line2 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .cta-wrapper .cta .line3 {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    .cta-wrapper .cta {
+        height: 250px;
+        width: 250px;
+    }
+    .cta-wrapper .cta .btn {
+        font-size: 16px;
+    }
+    .spacer-80 {
+        height: 50px !important;
+    }
+    .panel-wrapper .panel-name a {
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .panel-wrapper .panel-name {
+        height: 50px;
+    }
+    .panel-wrapper .panel-name a::after {
+        height: 40px;
+        width: 40px;
+        background-size: 40px 40px;
+    }
+    #footer {
+        margin-top: 50px;
+    }
+    .quick-booking-wrapper .form-group {
+        width: 125px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    h1 {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    .cta-wrapper .cta .line1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .cta-wrapper .cta .line2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .cta-wrapper .cta .line3 {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    .cta-wrapper .cta {
+        height: 200px;
+        width: 200px;
+    }
+    .cta-wrapper .cta .btn {
+        font-size: 16px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .spacer-80 {
+        height: 30px !important;
+    }
+    #footer {
+        margin-top: 30px;
+    }
+    #header .navbar-brand {
+        width: 280px;
+    }
+    .quick-booking-wrapper {
+        text-align: center;
+    }
+    .quick-booking-wrapper .form-group {
+        margin-bottom: 15px;
+        width: 46%;
+    }
+    .quick-booking-wrapper .form-group.last {
+        margin-bottom: 0;
+    }
+    .quick-booking-wrapper .form-group:nth-child(even) {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .panel-wrapper img {
+        width: 100%;
+    }
+    .panel-wrapper .wpb_single_image .vc_figure, .panel-wrapper .wpb_single_image .vc_figure a {
+        width: 100%;
+    }
+    .panel-wrapper {
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width: 575px) {
+    h1 {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 15px;
+    }
+    #top-bar ul.contact-dets li:last-child {
+        display: none;
+    }
+    #top-bar ul.contact-dets li:first-child::after {
+        content: "";
+    }
+    #top-bar ul.contact-dets li a {
+        font-size: 20px;
+    }
+    #header {
+        padding-bottom: 35px;
+    }
+    #header .logo-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #header .navbar-brand {
+        width: 80%;
+    }
+    #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1::after {
+        color: #000000;
+    }
+    .menu-wrapper {
+        top: 30px;
+    }
+    .cta-wrapper .cta .line1 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .cta-wrapper .cta .line2 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .cta-wrapper .cta .line3 {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 8px;
+    }
+    .cta-wrapper .cta {
+        height: 160px;
+        width: 160px;
+        margin-left: 5px;
+        margin-right: 0;
+        background-color: rgba(19,120,187,0.8);
+    }
+    .cta-wrapper .cta .btn {
+        font-size: 12px;
+        padding: 5px;
+    }
+    .spacer-80 {
+        height: 20px !important;
+    }
+    #footer {
+        margin-top: 20px;
+    }
+    .spacer-35 {
+        height: 20px !important;
+    }
+    #copyright {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #mega-menu-wrap-primary #mega-menu-primary {
+        background: #1378bb;
+    }
+    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-toggle-on > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:focus {
+        color: #ffffff;
+    }
+    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link {
+        background: #0f6197;
+    }
+    #header .logo-wrapper {
+        text-align: center;
+    }
+    .quick-booking-wrapper {
+        text-align: center;
+    }
+    .quick-booking-wrapper .form-group {
+        margin-bottom: 15px;
+        width: 46%;
+    }
+    .quick-booking-wrapper .form-group:nth-child(even) {
+        margin-right: 0;
+    }
+    .quick-booking-wrapper .form-group.last {
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 399px) {
+    #header .navbar-brand {
+        width: 100%;
+    }
+    .quick-booking-wrapper .form-group {
+        margin-right: 0;
+        width: 100%;
+    }
+    .panel-wrapper .panel-name a::after {
+        width: 0;
+        height: 0;
+    }
+}
